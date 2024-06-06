@@ -1,0 +1,485 @@
+@charset "utf-8";
+
+/*공통*/
+.menu01{
+	>img{
+		height: 15%;
+		width: 15%;
+	}
+}
+
+.txtBox{
+	background: #fff;
+	width: 600px;
+	/*display: inline-block;*/
+	position: relative;
+	padding: 120px 0;
+
+	> img{
+		width: 10%;
+		height: 10%;
+		border-radius: 10px;
+	}  
+}
+.txtBox1{
+	width: 80vw;
+	height: 80vh;
+	/*display: inline-block;*/
+	padding-left: 5%;
+	padding-top: 1%;
+	justify-content: space-around;
+}
+
+.intro .txtBox{
+	padding: 300px 0;
+}
+.about .txtBox{
+	padding: 90px 0;
+}
+
+.menu{
+	position: absolute;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+}
+
+/*menulnb*/
+.section{
+		position: relative;
+}
+.mlnb{
+	background: rgba(0,0,0,1);
+	width: 0;
+	height: 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	overflow: hidden;
+	transition: width 1s;
+	padding: 80px 0;
+}
+.mlnb li{
+	text-align:center;
+	line-height: 130px;
+	color: #fff;
+	font-size: 40px;
+	font-weight: 500;
+}
+.mlnb li:first-child{
+	font-size: 40px;
+	text-align: right;
+	padding-right: 100px;
+}
+.mlnb li i{
+	cursor: pointer;
+}
+.mlnb li a:after{
+	content: "";
+	max-width: 0;
+	height: 8px;
+	display: block;
+	background: rgba(255,255,32,0.6);
+	transition: max-width 0.5s;
+	margin:0 auto;
+}
+.mlnb li:first-child:after{
+	display: none;
+}
+.mlnb li:hover a:after{
+	max-width: 215px;
+}
+.mlnb li a{
+	color: #fff;
+}
+
+.pageName{
+	position: absolute;
+	top: 37px;
+	left: 192px;
+	font-size: 15px;
+	font-weight: bold;
+}
+pageName span{
+	vertical-align: middle;
+}
+.pageName:after{
+	content: "";
+	height: 1px;
+	width: 60px;
+	background: #333;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 4px;
+}
+
+
+.logo{
+	width: 15px;
+	height: 93px;
+	position: absolute;
+	top: 109px;
+	left: 13px;
+}
+
+.introTxt{
+	/*width: 357px;*/
+	position: absolute;
+	top: 50%;
+	margin-top: -153px; 
+	left: 278px;
+}
+.introTxt dt{	
+	font-size: 60px;
+	line-height: 80px;
+	font-weight: 900;
+}
+.introTxt dd{
+	font-size: 23px;
+	font-weight: 400;
+}
+.introTxt dd span{
+	font-weight: 600;
+}
+
+.inner{
+	position: relative;
+	display: flex;
+}
+.Btn{
+	cursor: pointer;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	z-index: 1;
+}
+.Btn i{
+	font-size: 50px;
+}
+
+
+#section1 .txtBox, #section2 .txtBox1, #section3 .txtBox1, #section4.txtBox1{
+	background:rgba(102,112,103,0.15);
+}
+
+/***Intro***/
+#section0{
+	background: url(../../images/introBg.png) no-repeat center center;
+	background-size: cover;
+	width: 100%;
+}
+
+/***About***/
+#section1{
+	background: #f9ecd8;
+	width: 100%;
+}
+
+/**좌측메뉴**/
+.aboutL{
+	float: left;
+}
+.aboutTxt{
+	text-align: center;
+}
+
+.aboutPhoto{
+	background: no-repeat center center;
+	background-size: cover;
+	width: 334px;
+	height: 334px;
+	/*text-indent: -9999px;*/
+	margin: 0 auto;
+}
+.Photo{
+	width: 100%;
+	height: auto ;
+
+}
+
+.aboutIntro{
+	width: 490px;
+	line-height: 34px;
+	margin: 30px auto;
+	font-family: 'NanumSquare', sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	text-align: left;
+}
+.aboutIntro span{
+	font-size: 22px;
+	font-weight: 900;
+}
+
+.aboutPhoto img {
+    border-radius: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.aboutPhoto img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.Photo_txt {
+	font-size: small;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*.nameSign{
+	text-align: right;
+	margin-right: 13px;
+}
+.name{
+	vertical-align: middle;
+	font-size: 20px;
+	font-weight: 600
+}
+.sign{
+	vertical-align: middle;
+}*/
+
+/**우측메뉴**/
+.aboutR{
+	float: right;
+	margin: 0 auto;
+	line-height: 35px;
+	padding: 78px 0;
+}
+
+.aboutR dt{
+	font-size: 30px;
+	font-family: 'tmonmonsori', sans-serif;
+	padding-bottom: 15px;
+}
+.aboutR dd{
+	font-family: 'tmonmonsori', sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	padding-bottom: 20px;
+	padding-right: 50px;
+}
+.aboutR dd:last-child{
+	padding-bottom: 0;
+}
+.aboutR dd span{
+	font-size: 22px;
+	font-weight: 500;
+	vertical-align: top;
+	margin-right: 10px;
+}
+.aboutR dd p{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/***Portfolio 공통***/
+/**좌측메뉴**/
+.portL{
+	float: left;
+}
+
+.portTxt{
+	text-align: left;
+	margin-left: 279px;
+	padding: 35px 0;
+}
+.portTxt p{
+	font-size: 20px;
+	font-weight: 700;
+}
+.portTxt h2{
+	font-size: 60px;
+	font-weight: 900;
+}
+.portTxt h3{
+	font-size: 25px;
+	font-weight: 700;
+}
+
+.mainPage{
+	background: url(../../images/main01.png) no-repeat center center;
+	background: url(../../images/main01.png) no-repeat center center;
+	background-size: cover;
+	width: 421px;
+	height: 244px;
+	margin: 0 auto;
+	text-indent: -9999px;
+}
+
+/**우측메뉴**/
+.portR{
+	float: right;
+	width: 535px;
+	margin: 0 auto;
+	line-height: 42px;
+}
+.portR dt{
+	width: 135px;
+	font-size: 25px;
+	font-family: 'tmonmonsori', sans-serif;
+	display: inline-block;
+	vertical-align: middle;
+	margin-bottom: 15px;
+}
+.portR dt:last-child{
+	margin-bottom: 0;
+}
+.portR .firstTit{
+	width: 100%;
+	display: block;
+	margin-bottom: 0;
+}
+.portR .lastTit{
+	margin-bottom: 0;
+}
+.portR dd{
+	width: 300px;
+	font-size: 20px;
+	font-weight: 400;
+	display: inline-block;
+	vertical-align: middle;
+	margin-bottom: 15px;
+}
+
+.portR .firstTxt{
+	display: block;
+	width: 100%;
+}
+.portR .lastTxt{
+	margin-bottom: 0;
+}
+
+
+
+/***Portfolio***/
+#section2{
+	background: #80abbc;
+	width: 100%;
+
+}
+
+*{
+    font-size: 30px;
+    font-weight: bold;
+}
+#wrap2{
+	width: 100%;
+	margin-top: 10%;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+.card_box{
+    width: 280px;
+    height: 350px;
+    background: #FED6E3;
+    transition: .5s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+.card_box div{
+    width: 100%;
+    height: 100%;
+    line-height: 350px;
+    text-align: center;
+    position: absolute;
+    backface-visibility: hidden;
+}
+.back{
+    transform: rotateY(180deg);
+    background: #36B7B1;
+    color: #fff;
+}
+.card:hover .card_box{
+    transform: rotateY(180deg);  
+}
+
+/***Guest Book***/
+#section3{
+	background: #f1e4b1;
+	width: 100%;
+
+}
+/**좌측메뉴**/
+.portfolio02 .mainPage{
+	background: url(../../images/main02.png) no-repeat center center;
+	height: 230px;
+}
+.portfolio02 .portTxt{
+
+}
+
+/**우측메뉴**/
+.portfolio02 .viewBtnOn{
+	padding: 185px 0;
+} 
+
+/***Contact***/
+#section4{
+	background: #d5c4c4;
+	padding: 30px 0;
+}
+.contact .inner{
+	position: relative;
+}
+.contact .portTxt h2{
+	line-height: 65px;
+}
+
+.portTxt img{
+	width: 23px;
+	vertical-align: middle;
+}
+.portTxt span{
+	vertical-align: middle;
+	font-size: 18px;
+	font-weight: 600;
+	margin-left: 10px;
+}
+.contact .logo{
+	position: absolute;
+	top: 109px;
+	left: 13px;
+}
+.contact .mail{
+	position: absolute;
+	left: 13px;
+	bottom: 13px;
+}
+
+.portTxt h2{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.contact .portTxt h3{
+		text-align: center;
+		font-size: 16px;
+		font-weight: 400;
+		padding: 30px 0;
+	}
+
+.cInfo{
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 30px;
+}
+.cInfo li{
+	position: relative;
+}
+.cInfo li span{
+	cursor: pointer;
+}
+
+footer {
+    position:relative;
+    bottom: 0%;
+    width: 100%;
+	height: 8vh;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
