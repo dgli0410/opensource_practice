@@ -58,11 +58,11 @@
 	z-index: 1;
 	overflow: hidden;
 	transition: width 1s;
-	padding: 80px 0;
+	padding: 40px 0;
 }
 .mlnb li{
 	text-align:center;
-	line-height: 130px;
+	line-height: 90px;
 	color: #fff;
 	font-size: 40px;
 	font-weight: 500;
@@ -274,7 +274,7 @@ pageName span{
 	vertical-align: top;
 }
 
-/***Portfolio 공통***/
+/***Portfolio***/
 /**좌측메뉴**/
 .portL{
 	float: left;
@@ -284,6 +284,7 @@ pageName span{
 	text-align: left;
 	margin-left: 279px;
 	padding: 35px 0;
+	width: 100vw;
 }
 .portTxt p{
 	font-size: 20px;
@@ -298,15 +299,6 @@ pageName span{
 	font-weight: 700;
 }
 
-.mainPage{
-	background: url(../../images/main01.png) no-repeat center center;
-	background: url(../../images/main01.png) no-repeat center center;
-	background-size: cover;
-	width: 421px;
-	height: 244px;
-	margin: 0 auto;
-	text-indent: -9999px;
-}
 
 /**우측메뉴**/
 .portR{
@@ -374,7 +366,7 @@ pageName span{
 .card_box{
     width: 280px;
     height: 350px;
-    background: #FED6E3;
+    background: #80FFEC;
     transition: .5s;
     transform-style: preserve-3d;
     cursor: pointer;
@@ -396,25 +388,38 @@ pageName span{
     transform: rotateY(180deg);  
 }
 
+.back-font{
+	font-size: 50px;
+	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	text-decoration: none;
+	transition: font-size 0.3s ease;
+}
+
+.back-font:hover{
+	font-size: 80px;
+}
+
+.fa-file-lines{
+	font-size: 10vw;
+	padding-top: 30%;
+}
+
+.fa-folder-closed{
+	font-size: 10vw;
+	padding-top: 30%;
+}
+
+.fa-users-between-lines{
+	font-size: 10vw;
+	padding-top: 30%;
+}
 /***Guest Book***/
 #section3{
 	background: #f1e4b1;
 	width: 100%;
 
 }
-/**좌측메뉴**/
-.portfolio02 .mainPage{
-	background: url(../../images/main02.png) no-repeat center center;
-	height: 230px;
-}
-.portfolio02 .portTxt{
 
-}
-
-/**우측메뉴**/
-.portfolio02 .viewBtnOn{
-	padding: 185px 0;
-} 
 
 /***Contact***/
 #section4{
@@ -462,9 +467,9 @@ pageName span{
 	}
 
 .cInfo{
-	display: inline-block;
-	vertical-align: middle;
-	margin-left: 30px;
+	display:block;
+	/*vertical-align: middle;*/
+	margin-left: 50px;
 }
 .cInfo li{
 	position: relative;

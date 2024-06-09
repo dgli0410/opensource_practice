@@ -1,0 +1,62 @@
+.guest_book {
+    width: 52vw;
+    margin: 20px auto;
+    padding: 0px 20px 20px 20px;
+    background: #ddd;
+    box-shadow: 0 0 30px rgba(67, 79, 250, 0.5);
+}
+
+.guest_book h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.name-input, .content-input {
+    width: 100%;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.entries-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.entry-item {
+    background-color: #f4f4f4;
+    margin-bottom: 10px;
+    font-size: 18px;
+    width: calc(100% - 20px);
+    padding: 10px;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.entry-item:hover {
+    background-color: #ddd;
+}
+
+.timestamp {
+    font-size: 12px;
+    color: #888;
+}
+
+.delete-btn {
+    display: none;
+    position: absolute;
+    top: 2px;
+    right: 5px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 50px;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.entry-item:hover .delete-btn {
+    display: block;
+}

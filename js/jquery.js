@@ -44,18 +44,14 @@ $(document).ready(function(){
     }
 
     $('.cInfo01 span').click(function() {
-        copyToClipboard('thdek13@hanmail.net');
+        copyToClipboard('toseph0924@gmail.com');
         alert('클립보드로 복사되었습니다.');
     });
 
     $('.cInfo02 span').click(function() {
-        copyToClipboard('jeong1233');
+        copyToClipboard('dgli._.0410');
         alert('클립보드로 복사되었습니다.');
     });
 
-    $('.cInfo03 span').click(function() {
-        copyToClipboard('http://jeong1233.dothome.co.kr/portfolio');
-        alert('클립보드로 복사되었습니다.');
-    });
     // 클립보드 복사 //
 });
